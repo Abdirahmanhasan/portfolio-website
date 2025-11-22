@@ -36,12 +36,12 @@ export default function Navigation() {
   return (
     <>
       <nav
-        className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 w-[95%] md:w-auto max-w-5xl rounded-full ${isScrolled
-          ? 'bg-white/95 dark:bg-slate-900/95 shadow-lg border border-slate-200 dark:border-slate-700/50'
-          : 'bg-white/90 dark:bg-slate-900/90 border border-transparent'
+        className={`fixed top-6 right-4 md:left-1/2 md:right-auto md:transform md:-translate-x-1/2 z-50 transition-all duration-300 w-auto max-w-5xl rounded-full ${isScrolled
+          ? 'md:bg-white/95 md:dark:bg-slate-900/95 md:shadow-lg md:border md:border-slate-200 md:dark:border-slate-700/50'
+          : 'md:bg-white/90 md:dark:bg-slate-900/90 md:border md:border-transparent'
           }`}
       >
-        <div className="px-4 py-1.5 md:px-5 md:py-2">
+        <div className="md:px-5 md:py-2">
           <div className="flex justify-between items-center gap-6">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">

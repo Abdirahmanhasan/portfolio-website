@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { ArrowDown, Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react'
+import profilePic from '../assets/dihaan.jpg'
 
 export default function Hero() {
   const containerVariants = {
@@ -174,7 +175,7 @@ export default function Hero() {
               {/* Image container */}
               <div className="absolute inset-8 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
                 <Image
-                  src="/dihaan.jpg"
+                  src={profilePic}
                   alt="Abdirahman Hassan Jimale"
                   fill
                   className="object-cover"
